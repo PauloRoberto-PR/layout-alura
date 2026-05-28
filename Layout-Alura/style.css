@@ -6,7 +6,7 @@
 
 body {
     background-color: #00030c;
-<<<<<<< HEAD
+
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
@@ -27,7 +27,7 @@ a {
     min-height: 100vh;
     object-fit: cover;
     display: block;
-=======
+
     color: white;
     font-family: 'Arial', sans-serif;
         margin: 0;
@@ -43,7 +43,6 @@ a {
    height: 100vh;
    width: 100%;
    margin: 0;
->>>>>>> c7939f1c050453d0a775a9178990ec8a9832911f
 }
 
 .container-principal {
@@ -165,10 +164,8 @@ a {
 .div-imagem-rodape {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-=======
     align-content: center; 
->>>>>>> c7939f1c050453d0a775a9178990ec8a9832911f
+
 }
 
 .imagem-rodape {
@@ -177,14 +174,12 @@ a {
 }
 
 .footer {
-<<<<<<< HEAD
-    padding-top: 4rem;
+padding-top: 4rem;
 }
 
 .footer-image {
     display: block;
     margin: 0 auto 2rem;
-=======
     background-color: #00030c;
     padding: 22px;
     margin-top: 120px;
@@ -195,7 +190,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> c7939f1c050453d0a775a9178990ec8a9832911f
 }
 
 .menu {
