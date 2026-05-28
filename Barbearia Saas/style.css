@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #2f2f2f;
+    background-image:
+        linear-gradient(45deg, #3b3b3b 25%, transparent 25%),
+        linear-gradient(-45deg, #3b3b3b 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #3b3b3b 75%),
+        linear-gradient(-45deg, transparent 75%, #3b3b3b 75%);
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+    background-size: 16px 16px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.moldura {
+    width: 100vw;
+    height: 100vh;
+    padding: 12px 14px;
+}
+
+.aplicacao {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #252525;
+    background:
+        radial-gradient(ellipse at center 69%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.08) 11%, rgba(255, 255, 255, 0) 30%),
+        linear-gradient(180deg, #000000 0%, #000000 52%, #101010 72%, #444444 90%, #6f6f6f 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.topo {
+    display: grid;
+    grid-template-columns: 60px 1fr 168px;
+    align-items: center;
+    height: 48px;
+    padding: 0 18px 0 4px;
+    background: linear-gradient(90deg, #c07d00 0%, #f0a000 55%, #d48b00 100%);
+    color: #000000;
+}
+
+.topo__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo__logo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topo__voltar {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.topo__usuario {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.topo__usuario svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: #000000;
+    stroke-width: 4.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.atalhos {
+    display: flex;
+    justify-content: center;
+    gap: 112px;
+    padding-top: 101px;
+}
+
+.atalho {
+    margin: 0;
+}
+
+.atalho--novo {
+    width: 203px;
+}
+
+.atalho--agenda {
+    width: 203px;
+}
+
+.atalho img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 760px) {
+    .moldura {
+        padding: 10px;
+    }
+
+    .topo {
+        grid-template-columns: 52px 1fr 138px;
+        padding-right: 12px;
+    }
+
+    .topo__voltar {
+        font-size: 17px;
+    }
+
+    .topo__usuario {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .topo__usuario svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .atalhos {
+        gap: 70px;
+        padding-top: 88px;
+    }
+
+    .atalho--novo,
+    .atalho--agenda {
+        width: 182px;
+    }
+}
+
+@media (max-width: 560px) {
+    .topo {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        height: auto;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .topo__usuario {
+        justify-content: center;
+    }
+
+    .atalhos {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        padding-top: 34px;
+    }
+
+    .atalho--novo,
+    .atalho--agenda {
+        width: min(203px, 58vw);
+    }
+}
