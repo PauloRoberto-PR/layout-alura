@@ -6,6 +6,7 @@
 
 body {
     background-color: #00030c;
+<<<<<<< HEAD
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
@@ -26,6 +27,23 @@ a {
     min-height: 100vh;
     object-fit: cover;
     display: block;
+=======
+    color: white;
+    font-family: 'Arial', sans-serif;
+        margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+   background-image: url(imgs/Background.png);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+>>>>>>> c7939f1c050453d0a775a9178990ec8a9832911f
 }
 
 .container-principal {
@@ -147,6 +165,10 @@ a {
 .div-imagem-rodape {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
+=======
+    align-content: center; 
+>>>>>>> c7939f1c050453d0a775a9178990ec8a9832911f
 }
 
 .imagem-rodape {
@@ -155,12 +177,25 @@ a {
 }
 
 .footer {
+<<<<<<< HEAD
     padding-top: 4rem;
 }
 
 .footer-image {
     display: block;
     margin: 0 auto 2rem;
+=======
+    background-color: #00030c;
+    padding: 22px;
+    margin-top: 120px;
+
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> c7939f1c050453d0a775a9178990ec8a9832911f
 }
 
 .menu {
